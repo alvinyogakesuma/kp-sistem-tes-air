@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 16px 8px 16px;
+            box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        header .header-icons {
+            display: flex;
+            gap: 8px;
+        }
+
+        header .header-icons a {
+            color: #001561;
+        }
+
+        main {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        main .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+        }
+
+        main .header h2 {
+            font-family: Aleo, Inter;
+            font-size: 20px;
+        }
+
+        main .header p {
+            font-family: Roboto, Inter;
+            font-size: 12px;
+        }
+
+        main .content {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        .measurement-title {
+            font-family: Aleo, Inter;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .card {
+            border-radius: 8px;
+            background: var(--gradient-1, radial-gradient(50.38% 120.87% at 0% 0%, #4299EA 0%, #001561 100%));
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .card p {
+            font-family: Roboto, Inter;
+            font-weight: 500;
+            color: #6177C4;
+            font-size: 12px;
+        }
+
+        .card p .highlight-num {
+            color: #5CFF89;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 16px 0px 16px 0px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+        }
+        
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            color: #B6BDD8;
+        }
+ 
+        nav .selected {
+            color: #001561;
+        }
+        
+        nav a p {
+            font-family: Roboto, Inter;
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        form {
+            padding: 14px;
+            display: block;
+        }
+
+        form label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-family: Roboto, Inter;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        form input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            border-color: rgba(0, 21, 97, 0.4);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px;
+            font-family: Roboto, Inter;
+            font-size: 12px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+        
+        form #email {
+            margin-bottom: 16px;
+        }
+
+        form #password {
+            margin-bottom: 24px;
+        }
+
+        form #ubahProfil {
+            background-color: #4299EA;
+            font-weight: 700;
+            color: #FAFAFA;
+            width: fit-content;
+            margin: auto;
+            border: none;
+            border-radius: 100px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href=""><img src="../assets/logo-mobile-2.png" alt="" width="105px" height="32px"></a>
+        <div class="header-icons">
+            <a href=""><i class="fa-solid fa-lg fa-bell"></i></a>
+            <a href=""><i class="fa-solid fa-lg fa-circle-info"></i></a>
+        </div>
+    </header>
+    <main>
+        <section class="header">
+            <i class="fa-solid fa-2xl fa-file-pdf"></i>
+            <div>
+                <h2>Report</h2>
+                <p>Berisi Laporan - laporan mengenai kekeruhan dan PH air</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h2 class="measurement-title">Safe</h2>
+                <p><span class="highlight-num">3 NTU</span> of 50 NTU</p>
+                <p>47 NTU LEFT</p>
+            </div>
+            <div class="card">
+                <h2 class="measurement-title">Safe</h2>
+                <p><span class="highlight-num">3 NTU</span> of 50 NTU</p>
+                <p>47 NTU LEFT</p>
+            </div>
+        </section>
+    </main>
+    <nav>
+        <a href="" class="nav-icon selected">
+            <i class="fa-solid fa-lg fa-house"></i>
+            <p>Home</p>
+        </a>
+        <a href="" class="nav-icon">
+            <i class="fa-solid fa-lg fa-key"></i>
+            <p>Home</p>
+        </a>
+        <a href="" class="nav-icon">
+            <i class="fa-solid fa-lg fa-file"></i>
+            <p>Home</p>
+        </a>
+        <a href="" class="nav-icon">
+            <i class="fa-solid fa-lg fa-user"></i>
+            <p>Home</p>
+        </a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px 8px 16px;
+    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header .header-icons {
+    display: flex;
+    gap: 8px;
+}
+
+header .header-icons a {
+    color: #001561;
+}
+
+main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main div {
+    text-align: center;
+}
+
+main div div {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-image: url(../assets/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+main div h2 {
+    font-family: Aleo, Inter;
+    font-size: 20px;
+    margin: 4px;
+}
+
+main div p {
+    font-family: Robot, Inter;
+    font-size: 12px;
+}
+
+.measurement-title {
+    font-family: Aleo, Inter;
+    color: white;
+    flex-grow: 1;
+}
+
+.card {
+    border-radius: 8px;
+    background: var(--gradient-1, radial-gradient(50.38% 120.87% at 0% 0%, #4299ea 0%, #001561 100%));
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.card p {
+    font-family: Roboto, Inter;
+    font-weight: 500;
+    color: #6177c4;
+    font-size: 12px;
+}
+
+.card p .highlight-num {
+    color: #5cff89;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px 0px 16px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #b6bdd8;
+}
+
+nav .selected {
+    color: #001561;
+}
+
+nav a p {
+    font-family: Roboto, Inter;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+form {
+    padding: 14px;
+    display: block;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: Roboto, Inter;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-color: rgba(0, 21, 97, 0.4);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    font-family: Roboto, Inter;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+form #email {
+    margin-bottom: 16px;
+}
+
+form #password {
+    margin-bottom: 24px;
+}
+
+form #ubahProfil {
+    background-color: #4299ea;
+    font-weight: 700;
+    color: #fafafa;
+    width: fit-content;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+}

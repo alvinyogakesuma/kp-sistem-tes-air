@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+form {
+    padding: 30px;
+    position: relative;
+    top: 144px;
+}
+
+form .logo {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+form .logo h1 {
+    font-family: Aleo, Inter;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-color: rgba(0, 21, 97, 0.4);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+form #email {
+    margin-bottom: 16px;
+}
+
+form #password {
+    margin-bottom: 24px;
+}
+
+form #login {
+    background-color: #4299ea;
+    font-weight: 700;
+    color: #fafafa;
+}
